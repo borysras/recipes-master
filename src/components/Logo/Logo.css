@@ -1,0 +1,38 @@
+.logo {
+	display: inline-block;
+	transition: all 0.2s linear;
+}
+
+.logo.small {
+	font-size: 0.75em;
+}
+
+.logo > .tomato {
+	height: 6.85714286em;
+	width: 6.85714286em;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo > .ui.header {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	margin: -0.1em 0 0.1em 0;
+	font-size: 3.5em;
+	letter-spacing: -0.1em;
+	line-height: 1em;
+}
+
+.logo > .tagline {
+	font-weight: 900;
+	line-height: 1.4285em;
+	text-align: center;
+	color: black;
+}
+
+.logo > .tagline > .binary-studio {
+	height: 1.4285em;
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-right: 1px;
+}

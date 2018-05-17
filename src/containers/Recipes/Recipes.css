@@ -1,0 +1,33 @@
+/*
+ * Masonry grid experiment.
+ * Looks so-so — saves space, sure, but breaks rhythm, why.
+ * Can't tell, maybe release this as a view option.
+ */
+ 
+.masonry.grid {
+	display: block;
+}
+
+.masonry.grid .card {
+	break-inside: avoid-column;	
+}
+
+@media only screen and (min-width: 768px) {
+	.masonry.grid {
+		column-count: 2;
+		column-gap: 0;
+		column-fill: auto;
+	}
+	.ui.doubling.masonry.grid > .column {
+		width: 100% !important;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.masonry.grid {
+		column-count: 3;
+	}
+}
+
+.ui.header.error-message { font-weight: 900; margin: 3em auto; }
+.ui.header.error-message a { cursor: pointer; }
